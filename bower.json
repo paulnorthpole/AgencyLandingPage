@@ -1,0 +1,38 @@
+{
+  "name": "my-new-project",
+  "authors": [
+    "Paul Charles <PCharles71@rocketmail.com>)"
+  ],
+  "description": "An agency landing page that was inspired by Mackenzie Child",
+  "main": [
+    "index.html",
+    "main.js"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "none"
+  ],
+  "license": "MIT",
+  "homepage": "https://google.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "normalize-css": "^7.0.0"
+  }
+}
