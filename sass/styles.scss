@@ -14,6 +14,7 @@ $dark_grey: #3f3d4e;
 
 body {
   font-family: "Cabin", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
   }
 
 .wrapper {
@@ -45,6 +46,11 @@ body {
   padding: .3rem 1.5rem;
   }
 
+.button_large {
+  padding: 1rem 5rem;
+  font-size: 1.35rem;
+  }
+
 .cf:after,
 .cf:before {
   content: " ";
@@ -59,6 +65,7 @@ body {
 #banner {
   background:      url(../images/banner_background.jpg) no-repeat;
   background-size: cover;
+  position: relative;
   header {
     padding: 2rem 0;
     }
@@ -155,6 +162,7 @@ body {
       }
     }
 
+
   &:before {
     content: " ";
     position: absolute;
@@ -165,3 +173,122 @@ body {
     margin-left: -30.1%;
     }
   }
+
+// - - - - - - - - - Past Work Styles - - - - - - - - - - - - -
+
+#past_work {
+  background-color: $dark_grey;
+  padding: 5rem 0 25rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  .title {
+    color: $white;
+    font-size: 2.5rem;
+    margin: 0 0 .75rem 0;
+    }
+  .logos {
+    width: 750px;
+    max-width: 95%;
+    }
+  #slider_buttons {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    a {
+      text-decoration: none;
+      }
+    li {
+      width: 9px;
+      height: 9px;
+      margin: 0 .5rem;
+      position: relative;
+      border-radius: 100%;
+      display: inline-block;
+      background-color: #5b596e;
+      transition: background .4s ease-in-out;
+      &:hover {
+        background: $highlight;
+        }
+      }
+    .current {
+      background-color: $highlight;
+      }
+    }
+
+  #slider {
+    list-style: none;
+    li {
+      width: 600px;
+      height: 375px;
+      overflow: hidden;
+      background-color: $white;
+      -webkit-box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+      -moz-box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+      box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+      position: absolute;
+      z-index: 3;
+      border-radius: .35rem .35rem 0 0;
+      img {
+        width: 100%;
+        }
+      &:nth-child(1) {
+        bottom: -37px;
+        left: 0;
+        -webkit-transform: scale(.8, .8);
+        -moz-transform: scale(.8, .8);
+        transform: scale(.8, .8);
+        z-index: 2;
+        }
+      &:nth-child(2) {
+        left: 50%;
+        margin-left: -300px;
+        z-index: 4;
+        bottom: 0;
+        }
+      &:nth-child(3) {
+        bottom: -37px;
+        right: 0;
+        -webkit-transform: scale(.8, .8);
+        -moz-transform: scale(.8, .8);
+        transform: scale(.8, .8);
+        z-index: 2;
+        }
+      }
+    }
+  }
+
+// - - - - - - - - - Contact Styles - - - - - - - - - - - - -
+
+#contact {
+  background: $grey_background;
+  padding: 6rem 0 8rem 0;
+  text-align: center;
+  .title {
+    font-size: 2.5rem;
+    color: $dark_grey;
+    margin: 0;
+    }
+  .sub_title {
+    font-size: 1.5rem;
+    color: $dark_grey;
+    width: 600px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 4rem auto;
+    }
+  }
+
+footer {
+  padding: 1rem 0;
+  .copyright {
+    text-align: center;
+    font-weight: 700;
+    color: $grey_copy;
+    a {
+      color: $highlight;
+      text-decoration: none;
+      }
+    }
+  }
+
